@@ -13,7 +13,7 @@ for bucket in s3.buckets.all():
 print(buffer)
 
 # Publish the bucket names to SNS topic
-topic = sns.Topic("arn:aws:sns:us-west-2:691995883950:DevTopic")
+topic = sns.Topic("arn:aws:sns:ap-southeast-1:916495840179:SendToViet")
 response = topic.publish(
         Message="My buckets: " + buffer
     )
